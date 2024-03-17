@@ -1,1 +1,5 @@
-﻿  lab_1.vcxproj -> C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Nowy folder\lab_1\x64\Debug\lab_1.exe
+﻿  lab_1.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_1\lab_1\lab_1.cpp(80): warning C4172: returning address of local variable or temporary: vs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_1\lab_1\lab_1.cpp(87): warning C4172: returning address of local variable or temporary: fs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_1\lab_1\lab_1.cpp(95): warning C4172: returning address of local variable or temporary: sp
+  lab_1.vcxproj -> C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_1\lab_1\x64\Debug\lab_1.exe

@@ -1,0 +1,83 @@
+﻿  Source.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(14,12): error C2143: syntax error: missing ';' before '*'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(14,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(14,27): error C2238: unexpected token(s) preceding ';'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(15,88): error C2061: syntax error: identifier 'GLFWmonitor'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(37,12): error C2143: syntax error: missing ';' before '*'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(37,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(37,103): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(40,26): error C2061: syntax error: identifier 'GLFWwindow'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(55,33): error C2061: syntax error: identifier 'GLFWwindow'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(18,3): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(18,68): error C2065: 'monitor': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(18,77): error C2065: 'share': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(18,12): error C3861: 'createWindow': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(21,23): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(25,3): error C3861: 'glViewport': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(32,3): error C3861: 'glfwInit': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(33,18): error C2065: 'GLFW_CONTEXT_VERSION_MAJOR': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(33,3): error C3861: 'glfwWindowHint': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(34,18): error C2065: 'GLFW_CONTEXT_VERSION_MINOR': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(34,3): error C3861: 'glfwWindowHint': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(41,8): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(43,4): error C3861: 'glfwTerminate': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(46,26): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(46,3): error C3861: 'glfwMakeContextCurrent': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,26): error C2065: 'GLADloadproc': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,39): error C2146: syntax error: missing ')' before identifier 'glfwGetProcAddress'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,8): error C3861: 'gladLoadGLLoader': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,1): error C2059: syntax error: ')'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,39): error C2065: 'glfwGetProcAddress': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(50,54): error C2059: syntax error: ';'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(51,4): error C3861: 'glfwTerminate': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(54,2): error C2059: syntax error: '}'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(54,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(55,76): error C2143: syntax error: missing ';' before '{'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(55,76): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(4,44): error C2661: 'WindowSetup::WindowSetup': no overloaded function takes 5 arguments
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(5,2): error C2065: 'GLFWwindow': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(5,14): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(5,25): error C2039: 'window': is not a member of 'WindowSetup'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(11): message : see declaration of 'WindowSetup'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(8,32): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(8,10): error C3861: 'glfwWindowShouldClose': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(9,19): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(9,3): error C3861: 'glfwSwapBuffers': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\Source.cpp(10,3): error C3861: 'glfwPollEvents': identifier not found
+  WindowSetup.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(14,12): error C2143: syntax error: missing ';' before '*'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(14,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(14,27): error C2238: unexpected token(s) preceding ';'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(15,88): error C2061: syntax error: identifier 'GLFWmonitor'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(37,12): error C2143: syntax error: missing ';' before '*'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(37,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(37,103): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(40,26): error C2061: syntax error: identifier 'GLFWwindow'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(55,33): error C2061: syntax error: identifier 'GLFWwindow'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(18,3): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(18,68): error C2065: 'monitor': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(18,77): error C2065: 'share': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(18,12): error C3861: 'createWindow': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(21,23): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(25,3): error C3861: 'glViewport': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(32,3): error C3861: 'glfwInit': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(33,18): error C2065: 'GLFW_CONTEXT_VERSION_MAJOR': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(33,3): error C3861: 'glfwWindowHint': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(34,18): error C2065: 'GLFW_CONTEXT_VERSION_MINOR': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(34,3): error C3861: 'glfwWindowHint': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(41,8): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(43,4): error C3861: 'glfwTerminate': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(46,26): error C2065: 'window': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(46,3): error C3861: 'glfwMakeContextCurrent': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,26): error C2065: 'GLADloadproc': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,39): error C2146: syntax error: missing ')' before identifier 'glfwGetProcAddress'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,8): error C3861: 'gladLoadGLLoader': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,1): error C2059: syntax error: ')'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(49,39): error C2065: 'glfwGetProcAddress': undeclared identifier
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(50,54): error C2059: syntax error: ';'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(51,4): error C3861: 'glfwTerminate': identifier not found
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(54,2): error C2059: syntax error: '}'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(54,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(55,76): error C2143: syntax error: missing ';' before '{'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\OpenGL1\WindowSetup.h(55,76): error C2447: '{': missing function header (old-style formal list?)
+  Generating Code...

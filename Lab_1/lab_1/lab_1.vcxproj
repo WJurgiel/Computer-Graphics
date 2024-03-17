@@ -141,6 +141,10 @@
   <ItemGroup>
     <ClCompile Include="..\..\OpenGL\glad.c" />
     <ClCompile Include="lab_1.cpp" />
+    <ClCompile Include="WindowSetup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WindowSetup.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

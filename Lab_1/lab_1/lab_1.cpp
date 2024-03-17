@@ -1,6 +1,7 @@
 #include <glad/glad.h>
 #include <glfw3.h>
 #include <iostream>
+#include "WindowSetup.h"
 float vertices[] = {
 	0.5f,0.5f,0.0f, 1.0f, 0.0f, 0.0f, //top right 0
 	0.5f,-0.5f,0.0f, 1.0f, 1.0f, 0.0f,//bottom right 1
@@ -110,8 +111,9 @@ void processInput(GLFWwindow* window) {
 int main() {
 	unsigned w_height = 500;
 	unsigned w_width = 600;
-
-	glfwInit();
+	WindowSetup w(500, 600, "H", NULL, NULL);
+	glfwSetFramebufferSizeCallback(w.window, framebuffer_size_callback);
+	/*glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -130,7 +132,7 @@ int main() {
 	}
 
 	glViewport(0, 0, w_width, w_height);
-	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);*/
 
 
 	//VAOs, VBOs, EBOs:
@@ -182,8 +184,8 @@ int main() {
 	glUseProgram(shaderProgram[0]);
 
 
-	while (!glfwWindowShouldClose(window)) {
-		processInput(window);
+	while (!glfwWindowShouldClose(w.window)) {
+		processInput(w.window);
 
 		glClearColor(0.3f, 0.1f, 0.51f, 1.0);
 		glClear(GL_COLOR_BUFFER_BIT);
@@ -202,7 +204,7 @@ int main() {
 		/*Task 2*/
 		//glDrawElements(GL_LINES, 8, GL_UNSIGNED_INT, 0);
 
-		glfwSwapBuffers(window);
+		glfwSwapBuffers(w.window);
 		glfwPollEvents();
 	}
 

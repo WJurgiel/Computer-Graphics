@@ -1,2 +1,3 @@
 C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\1\lab_1\x64\Debug\lab_1.exe
 C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Nowy folder\lab_1\x64\Debug\lab_1.exe
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_1\lab_1\x64\Debug\lab_1.exe

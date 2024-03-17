@@ -21,5 +21,13 @@
     <ClCompile Include="..\..\OpenGL\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WindowSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WindowSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
