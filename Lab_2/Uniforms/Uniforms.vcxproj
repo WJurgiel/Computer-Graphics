@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\OpenGL\glad.c" />
+    <ClCompile Include="Circle.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="WindowSetup.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Circle.h" />
     <ClInclude Include="Shaders.h" />
     <ClInclude Include="WindowSetup.h" />
   </ItemGroup>

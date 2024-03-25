@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_3\Lab 18.03\Source.cpp(13,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_3\Lab 18.03\Source.cpp(40,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_3\Lab 18.03\Source.cpp(80,66): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_3\Lab 18.03\Shaders.h(51): warning C4172: returning address of local variable or temporary: fs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_3\Lab 18.03\Shaders.h(44): warning C4172: returning address of local variable or temporary: vs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_3\Lab 18.03\Shaders.h(59): warning C4172: returning address of local variable or temporary: sp
+LINK : fatal error LNK1168: cannot open C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_3\Lab 18.03\x64\Debug\Lab 18.03.exe for writing

@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\Practice_uniforms\Project1\Source.cpp(125,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\Practice_uniforms\Project1\Shaders.h(66): warning C4172: returning address of local variable or temporary: fs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\Practice_uniforms\Project1\Shaders.h(59): warning C4172: returning address of local variable or temporary: vs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\Practice_uniforms\Project1\Shaders.h(74): warning C4172: returning address of local variable or temporary: sp
+  Project1.vcxproj -> C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Practice_0\Practice_uniforms\Project1\x64\Debug\Project1.exe

@@ -3,20 +3,18 @@
 const GLchar* vertexShaderSource =
 "#version 330 core\n"
 "layout(location = 0) in vec3 position;\n"
-"out vec3 vertexColor;\n"
 "void main()\n"
 "{\n"
 "gl_Position = vec4(position.x, position.y,position.z, 1.0);\n"
-"vertexColor = vec3(0.7,0.3, 0.2);\n"
 "}\0";
 
 const GLchar* fragmentShaderSource =
 "#version 330 core\n"
-"in vec3 vertexColor;\n"
+"uniform vec3 uColor = vec3(0.53, 0.1, 0.3);\n"
 "out vec4 fragmentColor;\n"
 "void main()\n"
 "{\n"
-" fragmentColor = vec4(vertexColor, 1.0);\n"
+" fragmentColor = vec4(uColor.x,uColor.y,uColor.z, 1.0);\n"
 "}\0";
 
 void getShaderCompilationStatus(GLint shader, std::string type) {
