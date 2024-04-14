@@ -1,0 +1,13 @@
+﻿  Source.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Square.h(99,1): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(37,43): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Shaders.h(70): warning C4172: returning address of local variable or temporary: vs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Shaders.h(85): warning C4172: returning address of local variable or temporary: sp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Shaders.h(77): warning C4172: returning address of local variable or temporary: fs
+  Lab 5 - Translations.vcxproj -> C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\x64\Debug\Lab 5 - Translations.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

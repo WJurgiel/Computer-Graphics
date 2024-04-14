@@ -1,0 +1,8 @@
+﻿  Texturing.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_4\Texturing\Texturing.cpp(35,12): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_4\Texturing\Shaders.h(62): warning C4172: returning address of local variable or temporary: sp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_4\Texturing\Shaders.h(54): warning C4172: returning address of local variable or temporary: fs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_4\Texturing\Shaders.h(47): warning C4172: returning address of local variable or temporary: vs
+  Texturing.vcxproj -> C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab_4\Texturing\x64\Debug\Texturing.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
