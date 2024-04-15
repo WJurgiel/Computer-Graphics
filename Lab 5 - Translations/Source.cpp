@@ -3,14 +3,11 @@
 #include "Square.h"
 #include "FileHandler.h"
 #include "TexturingUnit.h"
-#define WINDOW_HEIGHT 400
-#define WINDOW_WIDTH 400
+#define WINDOW_HEIGHT 700
+#define WINDOW_WIDTH 700
 const std::string VERTEX_PATH = "squareVtx.txt";
 const std::string INDICES_PATH = "squareIdx.txt";
-unsigned shaderProgramPlaceHolder;
-glm::mat4 model = glm::mat4(1.0f);
 
-//glm::mat4 model = glm::mat4(1.0f);
 /*
 	1. import vertices and indices by FileHandler::read_content_from_file<type>(path)
 	2. It will sound totally lame, but:
@@ -26,29 +23,29 @@ glm::mat4 model = glm::mat4(1.0f);
 	5. Remember to add .cpp files of external libraries
 */
 
+/*
+	lab 5:
+	*4 trojkaty 
+	* rozne kolory 
+	* 1 ruch w linii prostej
+	* 2 rotacja
+	* 3 naprzemiennie zwiêkszenia i zmniejszanie rozmiaru
+	* 4 po³¹czenie powy¿szych
+*/
 
 void keyboardCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
 		glfwSetWindowShouldClose(window, true);
 	}
 }
-void scrollCallback(GLFWwindow* window, double xoffset, double yoffset) {
-	double speed = 0.1f;
-	model = glm::scale(model, glm::vec3(1.0f + yoffset * speed));
-	glUseProgram(shaderProgramPlaceHolder);
 
-	GLint modelLoc = glGetUniformLocation(shaderProgramPlaceHolder, "model");
-	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-	std::cout << shaderProgramPlaceHolder;
-	glUseProgram(0);
-}
 int main() {
 	
 	
 	WindowSetup w(WINDOW_WIDTH, WINDOW_HEIGHT, "Translations", NULL, NULL);
 	glfwSetFramebufferSizeCallback(w.window, w.framebuffer_size_callback);
 	glfwSetKeyCallback(w.window, keyboardCallback);
-	glfwSetScrollCallback(w.window, scrollCallback);
+	
 
 	std::vector<float> vertices = read_content_from_file<float>(VERTEX_PATH);
 	std::vector<int> indices = read_content_from_file<int>(INDICES_PATH);
@@ -57,10 +54,27 @@ int main() {
 	tex.initializeTexture();
 
 
-	Square sq(vertices, indices, std::vector<std::vector<int>>{ {0, 3, 5, 0}, {1,2,5,3}},
+	Square tr1(vertices, indices, glm::vec3{-0.6f, 0.6f, 0.0f}, std::vector<std::vector<int>>{ {0, 3, 5, 0}, { 1,2,5,3 }},
 		vertexShaderSource,
 		fragmentShaderSource, tex.texture );
-	Square sq2(
+	Square tr2(vertices, indices, glm::vec3{ 0.6f, 0.6f, 0.0f }, std::vector<std::vector<int>>{ {0, 3, 5, 0}, { 1,2,5,3 }},
+		vertexShaderSource,
+		fragmentShaderSource, tex.texture);
+	Square tr3(vertices, indices, glm::vec3{ -0.6f, -0.6f, 0.0f }, std::vector<std::vector<int>>{ {0, 3, 5, 0}, { 1,2,5,3 }},
+		vertexShaderSource,
+		fragmentShaderSource, tex.texture);
+	Square tr4(vertices, indices, glm::vec3{ 0.6f, -0.6f, 0.0f }, std::vector<std::vector<int>>{ {0, 3, 5, 0}, { 1,2,5,3 }},
+		vertexShaderSource,
+		fragmentShaderSource, tex.texture);
+	tr1.changeColor(1.0f, 1.0f, 1.0f);
+	tr1.setID(1);
+	tr2.changeColor(0.0f, 1.0f, 0.0f);
+	tr2.setID(2);
+	tr3.changeColor(0.0f, 0.0f, 1.0f);
+	tr3.setID(3);
+	tr4.changeColor(0.0f, 0.0f, 0.0f);
+	tr4.setID(4);
+	/*Square sq2(
 		std::vector<float>{
 		-0.9f, 0.9f, 0.0f, 0.0, 1.0f,
 			-0.9f, 0.8f, 0.0f, 0.0f, 0.0f,
@@ -71,9 +85,8 @@ int main() {
 			vertexShaderSource,
 			fragmentShaderSource,
 			tex.texture
-		);
+		);*/
 
-	shaderProgramPlaceHolder = sq.shaderProgram;
 
 	while (!glfwWindowShouldClose(w.window)) {
 		
@@ -81,10 +94,14 @@ int main() {
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		tex.bindTexture();
-		sq2.draw();
-		sq.move(w.window, model);
-		sq.rotate(w.window, model, 1.f);
-		sq.draw();
+		tr1.draw();
+		tr1.animate(glfwGetTime(), 0.0001);
+		tr2.draw();
+		tr2.animate(glfwGetTime(), 0.00001);
+		tr3.draw();
+		tr3.animate(glfwGetTime(), 0.0001);
+		tr4.draw();
+		tr4.animate(glfwGetTime(), 0.0001);
 		tex.unbindTexture();
 		
 		glfwPollEvents();

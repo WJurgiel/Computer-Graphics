@@ -17,11 +17,15 @@ private:
 	unsigned vertexShader;
 	unsigned fragmentShader;
 	unsigned uLocation;
+	glm::mat4 model;
 	GLint modelLocation;
 	GLuint texture;
+	
+	//FOR LAB 5:
+	int id = 0; //triangle id that's required for animations
 public:
 	unsigned shaderProgram;
-	Square(std::vector<float> vertices, std::vector<int> indices, std::vector<std::vector<int>> attribPointers,
+	Square(std::vector<float> vertices, std::vector<int> indices, glm::vec3 transVec, std::vector<std::vector<int>> attribPointers,
 		const GLchar* vertexShaderSrc, const GLchar* fragmentShaderSrc, GLuint texture) :
 		VertexBuffers(vertices, indices, GL_STATIC_DRAW) {
 		this->vertices = vertices;
@@ -47,7 +51,10 @@ public:
 
 		/*TEXTURES*/
 		this->texture = texture;
-	
+		
+		//TRANSFORMATIONS:
+		model = glm::mat4(1.0f);
+		translate(transVec);
 	}
 	~Square() {
 		freeMemory();
@@ -80,16 +87,64 @@ public:
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUseProgram(0);
 	}
-	void rotate(GLFWwindow* window, glm::mat4& model, float angle) {
+	void translate(glm::vec3 transVector) {
 		glUseProgram(shaderProgram);
-		
-		if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS) {
-			model = glm::rotate(model, glm::radians(-angle), glm::vec3(0.0f, 0.0f, 1.0f));
-		}
+		model = glm::translate(model, transVector);
 		GLint modelLoc = glGetUniformLocation(shaderProgram, "model");
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUseProgram(0);
 	}
+	void rotate(glm::vec3 rotVector, float timer) {
+		glUseProgram(shaderProgram);
+		float angle = timer * 45.f;
+		model = glm::rotate(model, glm::radians(angle), rotVector);
+		GLint modelLoc = glGetUniformLocation(shaderProgram, "model");
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUseProgram(0);
+	}
+	void scalePulse(glm::vec3 scaleVec) {
+		glUseProgram(shaderProgram);
+		model = glm::scale(model,scaleVec);
+		GLint modelLoc = glGetUniformLocation(shaderProgram, "model");
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUseProgram(0);
+	}
+	void setID(int id) {
+		this->id = id;
+	}
+	void animate(float timer, float speed){
+		float translateX = sin(timer) * speed;
+		float translateY = cos(timer) * speed;
+		float scaleX, scaleY;
+		glUseProgram(shaderProgram);
+		if (this->id == 0) {
+			std::cout << "No id, apply triangle id by setID function";
+			return;
+		}
+		switch (this->id) {
+		case 1:
+			translate(glm::vec3{ translateX, 0.f, 0.f });
+			break;
+		case 2: 
+			rotate(glm::vec3{0.0f,0.0f, 1.0f}, sin(timer)*0.001);
+			break;
+		case 3:
+			translateX += 1.f;
+			translateY += 1.f;
+			scalePulse(glm::vec3(translateX, translateY,1.f));
+			break;
+		case 4: 
+			translate(glm::vec3{ translateX, 0.f, 0.f });
+			rotate(glm::vec3{ 0.0f,0.0f, 1.0f }, sin(timer) * 0.001);
+			scaleX = 1.f + translateX;
+			scaleY = 1.f + translateY;
+			scalePulse(glm::vec3(scaleX, scaleY, 1.f));
+			break;
+		default: break;
+		}
+		glUseProgram;
+	}
+	
 	void draw() {
 		bindVAO();
 		if (doesTextureExist()) {

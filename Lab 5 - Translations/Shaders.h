@@ -24,8 +24,8 @@ uniform sampler2D uTexture;
 out vec4 fragmentColor;
 void main()
 {
- fragmentColor = mix(texture(uTexture, vertexTexture), vec4(uColor.x, uColor.y/2, uColor.z/3, 1.0), 0.5);
-	//fragmentColor = vec4(uColor.x, uColor.y, uColor.z, 1.0f);
+ //fragmentColor = mix(texture(uTexture, vertexTexture), vec4(uColor.x, uColor.y/2, uColor.z/3, 1.0), 0.5);
+ fragmentColor = vec4(uColor.x, uColor.y, uColor.z, 1.0f);
 }
 )"; const GLchar* fragmentShaderSource2 = R"(
 #version 330 core
