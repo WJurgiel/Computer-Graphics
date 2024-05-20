@@ -92,7 +92,6 @@ int main() {
 		
 		glClearColor(1.0f, 0.0f, 0.2f, 1.f);
 		glClear(GL_COLOR_BUFFER_BIT);
-
 		tex.bindTexture();
 		tr1.draw();
 		tr1.animate(glfwGetTime(), 0.0001);

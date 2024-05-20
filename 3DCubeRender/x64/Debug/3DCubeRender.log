@@ -1,0 +1,22 @@
+﻿  Cube.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Cube.h(155,1): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Source.cpp
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Cube.h(155,1): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(114,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(115,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(152,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(153,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(154,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(155,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(179,30): warning C4244: 'argument': conversion from 'const float' to 'const unsigned int', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(179,16): warning C4244: 'argument': conversion from 'const float' to 'const unsigned int', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(202,32): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(234,47): warning C4305: 'argument': truncation from 'double' to 'const float'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\Source.cpp(235,48): warning C4305: 'argument': truncation from 'double' to 'const float'
+  Generating Code...
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\OpenGL\include\Shaders.h(35): warning C4172: returning address of local variable or temporary: vs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\OpenGL\include\Shaders.h(42): warning C4172: returning address of local variable or temporary: fs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\OpenGL\include\Shaders.h(50): warning C4172: returning address of local variable or temporary: sp
+  3DCubeRender.vcxproj -> C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\3DCubeRender\x64\Debug\3DCubeRender.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

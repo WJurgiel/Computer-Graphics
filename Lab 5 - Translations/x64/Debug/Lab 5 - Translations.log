@@ -2,17 +2,17 @@
 C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Square.h(129,49): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Square.h(138,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Square.h(154,1): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(98,36): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(98,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(100,37): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(100,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(102,36): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(102,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(104,36): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(104,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(97,36): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(97,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(99,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(99,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(101,36): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(101,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(103,36): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Source.cpp(103,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Shaders.h(70): warning C4172: returning address of local variable or temporary: vs
-C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Shaders.h(85): warning C4172: returning address of local variable or temporary: sp
 C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Shaders.h(77): warning C4172: returning address of local variable or temporary: fs
+C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\Shaders.h(85): warning C4172: returning address of local variable or temporary: sp
   Lab 5 - Translations.vcxproj -> C:\Users\Wojtek\source\repos\ComputerGraphics\Computer-Graphics\Lab 5 - Translations\x64\Debug\Lab 5 - Translations.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
